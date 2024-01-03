@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import random 
+import random
 
-#generate random number
+# generate random number
 number = random.randint(-10, 10)
 
 # check number
