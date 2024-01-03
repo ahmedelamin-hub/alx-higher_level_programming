@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def fizzbuzz():
     for n in range(1, 101):
         result = ""
@@ -8,4 +9,6 @@ def fizzbuzz():
             result += "Buzz"
         print(result if result else "{} ".format(n), end="")
 
-# Call the function to execute Fizz
+# Check if the script is being run directly
+
+
