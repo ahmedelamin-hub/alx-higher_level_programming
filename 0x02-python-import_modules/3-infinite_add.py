@@ -2,10 +2,10 @@
 from sys import argv
 
 if __name__ == "__main__":
-    argc = len(argv) - 1
+    gc = len(argv) - 1
     result = 0
 
-    for i in range(1, argc + 1):
-        result += int(argv[i])
+    for pop in range(1, gc + 1):
+        result += int(argv[pop])
 
     print(result)
