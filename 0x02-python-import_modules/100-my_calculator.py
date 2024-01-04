@@ -6,21 +6,19 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
-        a = int(argv[1])
-        op = argv[2]
-        b = int(argv[3])
+        a, op, b = int(argv[1]), argv[2], int(argv[3])
 
         if op == "+":
-            result = a + b
+            re = a + b
         elif op == "-":
-            result = a - b
+            re = a - b
         elif op == "*":
-            result = a * b
+            re = a * b
         elif op == "/":
-            result = a / b
+            re = a / b
         else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
 
-        print("{} {} {} = {}".format(a, op, b, result)
+        print("{} {} {} = {}".format(a, op, b, re)
         exit(0)
