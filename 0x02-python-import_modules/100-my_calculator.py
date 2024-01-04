@@ -11,13 +11,13 @@ if __name__ == "__main__":
         b = int(argv[3])
 
         if op == "+":
-            res = a + b
+            result = a + b
         elif op == "-":
-            res = a - b
+            result = a - b
         elif op == "*":
-            res = a * b
+            result = a * b
         elif op == "/":
-            res = a / b
+            result = a / b
         else:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
