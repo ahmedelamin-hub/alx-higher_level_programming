@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
     total = 0
 
     for btc in range(len(roman_string)):
-        if btc > 0 and litaliano[roman_string[i]] > litaliano[roman_string[btc - 1]]:
+        if btc > 0 and litaliano[roman_string[btc]] > litaliano[roman_string[btc - 1]]:
             total += litaliano[roman_string[btc]] - 2 * litaliano[roman_string[btc - 1]]
         else:
             total += litaliano[roman_string[i]]
