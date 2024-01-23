@@ -4,6 +4,7 @@ This module defines the Square class.
 It represents a square with a private size attribute.
 """
 
+
 class Square:
     """
     Represents a square with a private instance attribute: size.
@@ -20,6 +21,7 @@ class Square:
         size (int): The size of the square.
         """
         self.__size = size
+
 
 if __name__ == "__main__":
     my_square = Square(3)

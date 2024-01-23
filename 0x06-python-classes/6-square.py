@@ -6,15 +6,14 @@ with getters and setters for each, a method to calculate its area,
 and a method to print the square using '#', considering its position.
 """
 
+
 class Square:
     """
     Represents a square with private instance attributes: size and position.
-    Provides getters and setters for these attributes with validation, 
-    a method to calculate the square's area, and a method to print the square.
+    Provides getters and setters for these attributes with validation
 
     Attributes:
     size (int): The size of the square, accessible through a property.
-    position (tuple): The position of the square, accessible through a property.
     """
 
     def __init__(self, size=0, position=(0, 0)):
@@ -68,12 +67,12 @@ class Square:
         TypeError: If the position is not a tuple of 2 positive integers.
         """
         if (not isinstance(value, tuple) or len(value) != 2 or
-            not all(isinstance(num, int) and num >= 0 for num in value)):
+                not all(isinstance(num, int) and num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
-        """Calculates the area of the square. Returns the area of the square."""
+        """Calculates the area of the square.."""
         return self.__size ** 2
 
     def my_print(self):
@@ -88,6 +87,7 @@ class Square:
             print()
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
+
 
 if __name__ == "__main__":
     my_square_1 = Square(3)

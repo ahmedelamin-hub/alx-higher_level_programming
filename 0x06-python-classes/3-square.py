@@ -5,6 +5,7 @@ It represents a square with a private size attribute and
 a method to calculate its area.
 """
 
+
 class Square:
     """
     Represents a square with a private instance attribute: size,
@@ -39,6 +40,7 @@ class Square:
         The area of the square.
         """
         return self.__size ** 2
+
 
 if __name__ == "__main__":
     my_square_1 = Square(3)

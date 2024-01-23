@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """
 This module defines the Square class.
-It represents a square with a private size attribute, getter and setter for size,
-a method to calculate its area, and a method to print the square using '#'.
+It represents a square
 """
+
 
 class Square:
     """
     Represents a square with a private instance attribute: size.
-    Provides a getter and setter for size with validation, a method to calculate
-    the square's area, and a method to print the square.
 
     Attributes:
     size (int): The size of the square, accessible through a property.
@@ -68,6 +66,7 @@ class Square:
         else:
             for _ in range(self.__size):
                 print("#" * self.__size)
+
 
 if __name__ == "__main__":
     my_square = Square(3)
