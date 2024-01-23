@@ -5,7 +5,9 @@ It represents a square with a private size attribute, along with
 getter and setter methods for size, and a method to calculate its area.
 """
 
+
 class Square:
+
     """
     Represents a square with a private instance attribute: size.
     Provides a getter and setter for size with validation.
@@ -57,7 +59,9 @@ class Square:
         """
         return self.__size ** 2
 
+
 if __name__ == "__main__":
+
     my_square = Square(89)
     print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 
