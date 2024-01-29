@@ -89,7 +89,7 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Prints a message when an instance is deleted count."""
+        """Prints a message when an instance is deleted."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
@@ -115,3 +115,15 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        """Creates a new Rectangle instance with width and heigh
+
+        Parameters:
+            size (int): The size of the sides of the square.
+
+        Returns:
+            A new Rectangle instance with width and height equal to size.
+        """
+        return cls(size, size)
