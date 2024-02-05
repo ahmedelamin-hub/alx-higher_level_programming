@@ -1,0 +1,50 @@
+Test for 7-base_geometry.py
+-------------------------------------------
+
+case 0: Valid integer validation
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
+
+-------------------------------------------
+
+case 1: Invalid integer validation - string
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+  ...
+TypeError: name must be an integer
+
+-------------------------------------------
+
+case 2: Invalid integer validation - zero
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+  ...
+ValueError: age must be greater than 0
+
+-------------------------------------------
+
+case 3: Invalid integer validation - negative
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("distance", -4)
+Traceback (most recent call last):
+  ...
+ValueError: distance must be greater than 0
+
+-------------------------------------------
+
+case 4: Unimplemented area method
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+  ...
+Exception: area() is not implemented
+
+-------------------------------------------
