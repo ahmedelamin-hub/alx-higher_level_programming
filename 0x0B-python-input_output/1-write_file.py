@@ -6,7 +6,7 @@ This module provides a function to write a string to a text file
 
 def write_file(filename="", text=""):
     """
-    Writes a string to a text file and returns the number of characters written.
+    Writes a string to a text file and returns chars
 
     Args:
     filename (str): The name of the file to be written to.
