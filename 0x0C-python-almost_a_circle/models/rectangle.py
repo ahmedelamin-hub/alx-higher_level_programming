@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """Module for Rectangle class."""
-
-
 from models.base import Base
 
 
@@ -38,7 +36,7 @@ class Rectangle(Base):
     def width(self, value):
         if type(value) != int:
             raise Typeerror("width must be an integer")
-        if <= 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
 
