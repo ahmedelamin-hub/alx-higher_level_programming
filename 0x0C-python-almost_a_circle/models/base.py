@@ -15,7 +15,7 @@ class Base:
         """Initialize a new Base instance.
 
         Args:
-            id (int): The identity of the instance
+            id (int, optional): The identity
 
         Attributes:
             id (int): The identity of the instance.
@@ -25,3 +25,4 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
