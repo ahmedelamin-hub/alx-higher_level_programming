@@ -89,14 +89,25 @@ class Rectangle(Base):
                                                        self.x, self.y,
                                                        self.width, self.height)
     def update(self, *args):
-    """Update the Rectangle attributes."""
-    if len(args) > 0:
-        self.id = args[0]
-    if len(args) > 1:
-        self.width = args[1]
-    if len(args) > 2:
-        self.height = args[2]
-    if len(args) > 3:
-        self.x = args[3]
-    if len(args) > 4:
-        self.y = args[4]
+    """Update the Rectangle attributes
+
+    Args:
+            *args (ints): New attribute values.
+                - 1st argument represents id attribute
+                - 2nd argument represents width attribute
+                - 3rd argument represent height attribute
+                - 4th argument represents x attribute
+                - 5th argument represents y attribute
+            **kwargs (dict): New key/value pairs of attributes.
+        """
+    attrs = ['id', 'width', 'height', 'x', 'y']
+    
+    if args and len(args) > 0:
+        for i, arg in enumerate(args):
+            if i < len(attrs):
+                setattr(self, attrs[i], arg)
+    elif kwargs:
+        for key, value in kwargs.items():
+            if key in attrs:
+                setattr(self, key, value)
+
