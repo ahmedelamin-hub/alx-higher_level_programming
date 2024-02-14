@@ -79,14 +79,9 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-    # Print the vertical space (y)
-    for _ in range(self.y):
-        print("")
-
-    # Print the rectangle (height rows)
-    for _ in range(self.height):
-        # Print the horizontal space (x) followed by the rectangle width
-        print(" " * self.x + "#" * self.width)
+        """Print the Rectangle instance character #."""
+        for _ in range(self.height):
+            print("#" * self.width)
 
     def __str__(self):
         """Return the print() and str() representation of the Rectangle."""
