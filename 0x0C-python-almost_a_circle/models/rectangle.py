@@ -96,7 +96,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """Update the Rectangle attributes."""
         attrs = ['id', 'width', 'height', 'x', 'y']
-        
+
         if args:
             for attr, value in zip(attrs, args):
                 setattr(self, attr, value)
@@ -104,3 +104,13 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if key in attrs:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Return the dictionary representation of a Rectangle."""
+        return {
+                'id': self.id,
+                'width': self.width,
+                'height': self.height,
+                'x': self.x,
+                'y': self.y
+                }
