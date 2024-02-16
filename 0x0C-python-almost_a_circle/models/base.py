@@ -25,7 +25,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-    
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Return the JSON string representation"""
@@ -37,7 +37,8 @@ class Base:
     def save_to_file(cls, list_objs):
         """Write the JSON string representation."""
         filename = cls.__name__ + ".json"
-        list_dicts = [obj.to_dictionary() for obj in list_objs] if list_objs else []
+        list_dicts = ([obj.to_dictionary() for obj in list_objs]
+                      if list_objs else [])
         with open(filename, 'w') as file:
             file.write(cls.to_json_string(list_dicts))
 
