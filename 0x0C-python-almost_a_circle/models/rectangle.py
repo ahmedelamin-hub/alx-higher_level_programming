@@ -1,26 +1,13 @@
 #!/usr/bin/python3
 """Module for Rectangle class."""
-from models.base import Base
 
+from models.base import Base
 
 class Rectangle(Base):
     """Rectangle class that inherits from Base."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a Rectangle instance.
-
-        Args:
-            width (int): width of Rectangle.
-            height (int): height of Rectangle.
-            x (int): x coordinate
-            y (int): y coordinate
-            id (int): The identity Rectangle.
-        Raises:
-            TypeError: width or height not int
-            ValueError: width or height <= 0.
-            TypeError: x or y is not an int.
-            ValueError: x or y < 0.
-        """
+        """Initialize a Rectangle instance."""
         super().__init__(id)
         self.width = width
         self.height = height
@@ -90,14 +77,13 @@ class Rectangle(Base):
             print(" " * self.x + "#" * self.width)
 
     def __str__(self):
-    """Return the string representation of the Rectangle."""
-    return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - "
-            f"{self.width}/{self.height}")
+        """Return the string representation of the Rectangle."""
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
     def update(self, *args, **kwargs):
         """Update the Rectangle attributes."""
         attrs = ['id', 'width', 'height', 'x', 'y']
-
+        
         if args:
             for attr, value in zip(attrs, args):
                 setattr(self, attr, value)
@@ -105,13 +91,3 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if key in attrs:
                     setattr(self, key, value)
-
-    def to_dictionary(self):
-        """Return the dictionary representation of a Rectangle."""
-        return {
-                'id': self.id,
-                'width': self.width,
-                'height': self.height,
-                'x': self.x,
-                'y': self.y
-                }
