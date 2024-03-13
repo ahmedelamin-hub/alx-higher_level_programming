@@ -1,2 +1,7 @@
--- Attempt to grant privileges to the user, implicitly creating them if they do not exist.
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd' WITH GRANT OPTION;
+-- Creates the MySQL server user user_0d_1 and grants all privileges
+
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
+
+-- Make sure the privileges take immediate effect
+FLUSH PRIVILEGES;
