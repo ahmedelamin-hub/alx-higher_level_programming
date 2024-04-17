@@ -7,6 +7,7 @@ database 'hbtn_0e_0_usa'.
 import MySQLdb
 import sys
 
+
 def filter_states(username, password, dbname):
     """
     Connects to a MySQL database and prints states starting with 'N'.
@@ -21,6 +22,7 @@ def filter_states(username, password, dbname):
         print(row)
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) == 4:

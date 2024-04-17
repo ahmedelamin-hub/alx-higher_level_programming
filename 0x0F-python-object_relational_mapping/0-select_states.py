@@ -7,6 +7,7 @@ hbtn_0e_0_usa in ascending order by states.id.
 import MySQLdb
 import sys
 
+
 def list_states(username, password, dbname):
     """
     Connects to a MySQL database and prints all states in the states table,
@@ -21,6 +22,7 @@ def list_states(username, password, dbname):
         print(row)
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) == 4:
