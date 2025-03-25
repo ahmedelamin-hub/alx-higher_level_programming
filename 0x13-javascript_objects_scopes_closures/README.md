@@ -1,1 +1,1 @@
-this is a read me for this assignment
+This repository contains an assignment focused on objects and scopes in Java. The goal is to understand how Java manages objects, their lifetimes, and the scope in which variables and methods exist. You will learn about different types of variables (instance, class, local), object creation, how to manage object lifecycles, and how variable scopes affect the behavior of your code.
