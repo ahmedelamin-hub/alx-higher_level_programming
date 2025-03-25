@@ -1,1 +1,1 @@
-this is a read me for this assignment
+This repository contains an assignment focused on Java Warmup exercises. The goal is to familiarize yourself with the fundamental syntax and structure of the Java programming language. These exercises will help you get comfortable with basic Java concepts such as variables, data types, operators, loops, and conditional statements. It’s designed to ease you into the process of writing Java code and solving basic programming problems.
