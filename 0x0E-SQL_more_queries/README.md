@@ -1,1 +1,2 @@
-read me for this assignment
+Description
+This repository contains an assignment focused on SQL (Structured Query Language), the standard language used to interact with relational databases. The goal is to introduce you to the basics of SQL, including how to create databases, define tables, and perform queries to retrieve and manipulate data. You'll also learn about essential SQL operations such as SELECT, INSERT, UPDATE, and DELETE, as well as how to filter and sort data.
