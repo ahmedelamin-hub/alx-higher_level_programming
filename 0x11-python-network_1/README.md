@@ -1,1 +1,1 @@
-this is a read me for this
+This repository contains an assignment focused on network programming in Python. The goal is to explore how to use Python for creating and managing network connections, handling client-server communication, and interacting with network protocols. You'll learn how to work with sockets, send/receive data over networks, and build basic networking applications such as a client-server model using Python’s built-in libraries like socket and asyncio.
