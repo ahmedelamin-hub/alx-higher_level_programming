@@ -1,1 +1,2 @@
-this is a read me for this ass
+Description
+This repository contains an assignment focused on Object-Relational Mapping (ORM) in Python. ORM is a technique that allows you to interact with a relational database using Python objects instead of SQL queries. The goal is to understand how to use ORM frameworks like SQLAlchemy and Django ORM to map Python classes to database tables, and how to perform CRUD (Create, Read, Update, Delete) operations seamlessly using Python code.
