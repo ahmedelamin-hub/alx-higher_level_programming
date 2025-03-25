@@ -1,1 +1,2 @@
-this a read me for the java web scrapping
+Description
+This repository contains an assignment focused on web scraping using Java. The goal is to learn how to extract data from websites by parsing HTML and handling web requests. Using libraries like Jsoup and HttpURLConnection, you’ll practice retrieving and processing content from web pages. This assignment will help you understand how to interact with APIs, extract structured data, and manipulate the information to suit your needs.
