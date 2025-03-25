@@ -1,1 +1,2 @@
-this is a read me
+Description
+This repository contains an assignment focused on inheritance in Python. Inheritance is a key concept in object-oriented programming (OOP) that allows a class to inherit attributes and methods from another class. The goal is to understand how inheritance works, how to create subclass relationships, and how to override or extend inherited methods. This will help you build more flexible and reusable code in Python.
