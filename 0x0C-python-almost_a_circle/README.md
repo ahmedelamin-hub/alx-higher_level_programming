@@ -1,1 +1,2 @@
-This is a read me for this ass
+Description
+This repository contains an assignment focused on input and output (I/O) operations in Python. I/O is a fundamental part of any program, allowing it to interact with users, read from and write to files, and communicate with external systems. The goal is to learn how to handle user input, process it, and display output. Additionally, you'll learn how to read from and write to files using Python.
